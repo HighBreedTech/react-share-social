@@ -133,7 +133,7 @@ import $ from 'jquery';
 $(function(){
 $(document).on('click', '.react-share__ShareButton', function(e){
 if($(this).attr('aria-label') == 'email'){
-window.location.href = 'mailto:?subject=Check out this Website&body=Here is the Website: https://localhost:3000';
+window.location.href = 'mailto:?subject=Check out this Website&body=Here is the Website: http://localhost:3000';
 }
 })
 });
