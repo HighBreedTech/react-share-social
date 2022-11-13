@@ -31,6 +31,10 @@ var _MailruShareButton = _interopRequireDefault(require("./ShareButtons/MailruSh
 
 var _EmailShareButton = _interopRequireDefault(require("./ShareButtons/EmailShareButton"));
 
+var _WhatsappShareButton = _interopRequireDefault(require("./ShareButtons/WhatsappShareButton"));
+
+var _TelegramShareButton = _interopRequireDefault(require("./ShareButtons/TelegramShareButton"));
+
 var _OKShareButton = _interopRequireDefault(require("./ShareButtons/OKShareButton"));
 
 var _styles = require("@material-ui/core/styles");
@@ -199,6 +203,10 @@ function ShareSocial(props) {
   })), type === 'mailru' && /*#__PURE__*/_react.default.createElement(_MailruShareButton.default, _extends({}, props, {
     socialType: type
   })), type === 'email' && /*#__PURE__*/_react.default.createElement(_EmailShareButton.default, _extends({}, props, {
+    socialType: type
+  })), type === 'whatsapp' && /*#__PURE__*/_react.default.createElement(_WhatsappShareButton.default, _extends({}, props, {
+    socialType: type
+  })), type === 'telegram' && /*#__PURE__*/_react.default.createElement(_TelegramShareButton.default, _extends({}, props, {
     socialType: type
   })), type === 'ok' && /*#__PURE__*/_react.default.createElement(_OKShareButton.default, _extends({}, props, {
     socialType: type
