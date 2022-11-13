@@ -20,6 +20,8 @@ share UI support for:
   - Instapaper
   - Hatena
   - email  
+  - WhatsApp
+  - Telegram
   - Live Journal
   - Ok
   - Mailru
@@ -107,6 +109,32 @@ const style = {
 export default function InlineStyle() { 
     return <ShareSocial style={style} />
 }
+```
+
+Email Seams to have Bug and i have less time to figure that out so  i had to implement a JQuery Quick solution, put your Jquery code between ```js componentDidMount(){
+
+  } 
+  ```
+   or 
+  
+  ```js  useEffect(() => { 
+
+    });
+    ```
+    Depending either you are using function or class below is the Code for Jquery, remember to import JQuery as 
+    ```js
+    import $ from 'jquery';
+    ```
+
+```js
+$(function(){
+$(document).on('click', '.react-share__ShareButton', function(e){
+if($(this).attr('aria-label') == 'email'){
+window.location.href = 'mailto:?subject=Check out this Website&body=Here is the Website: https://localhost:3000';
+}
+})
+});
+
 ```
 
 ## License
