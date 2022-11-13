@@ -111,20 +111,23 @@ export default function InlineStyle() {
 }
 ```
 
-Email Seams to have Bug and i have less time to figure that out so  i had to implement a JQuery Quick solution, put your Jquery code between ```js componentDidMount(){
+Email Seams to have Bug and i have less time to figure that out so  i had to implement a JQuery Quick solution, put your Jquery code between 
+```js
+componentDidMount(){
 
   } 
-  ```
+```
    or 
   
-  ```js  useEffect(() => { 
+```js
+useEffect(() => { 
 
     });
-    ```
+```
     Depending either you are using function or class below is the Code for Jquery, remember to import JQuery as 
-    ```js
+```js
     import $ from 'jquery';
-    ```
+```
 
 ```js
 $(function(){
