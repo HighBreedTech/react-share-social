@@ -115,18 +115,18 @@ Email Seams to have Bug and i have less time to figure that out so  i had to imp
 ```js
 componentDidMount(){
 
-  } 
+} 
 ```
    or 
   
 ```js
 useEffect(() => { 
 
-    });
+});
 ```
     Depending either you are using function or class below is the Code for Jquery, remember to import JQuery as 
 ```js
-    import $ from 'jquery';
+import $ from 'jquery';
 ```
 
 ```js
